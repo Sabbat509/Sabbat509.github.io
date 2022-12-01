@@ -1,0 +1,50 @@
+@media only screen and (max-width: 1200px){
+    br{
+        display: none;
+    }
+    label, input{
+        display: block;
+    }
+    body{
+        background-color: azure;
+    }
+}
+label{
+    font-weight: bold;
+    margin-left: 5%;
+    margin-right: 3.5%;
+}
+.input3{
+    margin-right: 3%;
+}
+#text, picture{
+    vertical-align: top;
+    margin-right: 2.2%;
+}
+textarea{
+    resize: none;
+    width: 70%;
+    margin-bottom: 2%;
+}
+input{
+    margin:5px 0px;
+}
+div.form{
+    padding-right: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
+    border-style: solid;
+    border-color: black;
+}
+.input1{
+    width: 70%;
+}
+.input4{
+    width: 50%;
+}
+picture img{
+    width: 70%;
+    height: 10%;
+}
