@@ -1,0 +1,36 @@
+body{
+    background-color: #0C7489;
+    margin: auto;  
+}
+#form{
+    background-color: #D7D9CE;
+    margin: auto;
+    padding: 2%;
+    width: 20%;
+    border: 2px solid;
+    border-radius: 20px;
+    text-align: center;
+}
+label, input, select, button{
+    margin-bottom: 20px;
+}
+#operators{
+    width: 200px;
+    height: 25px;
+}
+#operators option {
+    width: 700px; 
+    height: 60px;  
+}
+input, button{
+    width: 200px;
+    height: 25px;
+}
+button{
+    background-color: #EC9A29;
+}
+#result{
+    background-color: #D7D9CE;
+    border-style: none;
+    text-align: center;
+}
