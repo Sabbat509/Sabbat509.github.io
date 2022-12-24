@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Dice Images</title>
+    <style type="text/css">
+        li{display: inline; margin-right: 10px;}
+        ul{margin: 0;}
+    </style>
+</head>
+<body>
+    <form action="#">
+        <input type="button" id="rollButton" value="Roll Dice">
+    </form>
+    <ol>
+        <li><img src="die1.png" alt="blank image" id="die1"></li>
+        <li><img src="die1.png" alt="blank image" id="die2"></li>
+        <li><img src="die1.png" alt="blank image" id="die3"></li>
+        <li><img src="die1.png" alt="blank image" id="die4"></li>
+        <li><img src="die1.png" alt="blank image" id="die5"></li>
+        <li><img src="die1.png" alt="blank image" id="die6"></li>
+    </ol><br>
+    <ol>
+        <li><img src="die1.png" alt="blank image" id="die7"></li>
+        <li><img src="die1.png" alt="blank image" id="die8"></li>
+        <li><img src="die1.png" alt="blank image" id="die9"></li>
+        <li><img src="die1.png" alt="blank image" id="die10"></li>
+        <li><img src="die1.png" alt="blank image" id="die11"></li>
+        <li><img src="die1.png" alt="blank image" id="die12"></li>
+    </ol><br>
+    <script>
+        var die1Image;
+        var die2Image;
+        var die3Image;
+        var die4Image;
+        var die5Image;
+        var die6Image;
+        var die7Image;
+        var die8Image;
+        var die9Image;
+        var die10Image;
+        var die11Image;
+        var die12Image;
+
+        function start(){
+            var button = document.getElementById("rollButton");
+            button.addEventListener("click",rollDice, false);
+            die1Image = document.getElementById("die1");
+            die2Image = document.getElementById("die2");
+            die3Image = document.getElementById("die3");
+            die4Image = document.getElementById("die4");
+            die5Image = document.getElementById("die5");
+            die6Image = document.getElementById("die6");
+            die7Image = document.getElementById("die7");
+            die8Image = document.getElementById("die8");
+            die9Image = document.getElementById("die9");
+            die10Image = document.getElementById("die10");
+            die11Image = document.getElementById("die11");
+            die12Image = document.getElementById("die12");
+        }
+
+        function rollDice(){
+            setImage( die1Image);
+            setImage( die2Image);
+            setImage( die3Image);
+            setImage( die4Image);
+            setImage( die5Image);
+            setImage( die6Image);
+            setImage( die7Image);
+            setImage( die8Image);
+            setImage( die9Image);
+            setImage( die10Image);
+            setImage( die11Image);
+            setImage( die12Image);
+        }
+
+        function setImage(dieImg){
+            var dieValue = Math.floor( 1 + Math.random() * 6);
+            dieImg.setAttribute("src", "die" + dieValue + ".png");
+            dieImg.setAttribute("alt","die image with " + dieValue+ " spot(s)");
+        }
+
+        window.addEventListener("load", start, false);
+    </script>
+</body>
+</html>
